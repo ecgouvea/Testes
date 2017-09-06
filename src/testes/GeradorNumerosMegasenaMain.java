@@ -25,6 +25,8 @@ public class GeradorNumerosMegasenaMain {
 				// TODO Nao permitir 2 jogos identicos
 			}
 			
+			// TODO Ordenar saida
+			
 			numeroGerados.forEach(item -> System.out.printf("%02.0f - ", item));
 			jogosGerados.add(numeroGerados);
 			

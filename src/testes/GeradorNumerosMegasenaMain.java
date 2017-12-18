@@ -4,11 +4,13 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class GeradorNumerosMegasenaMain {
+	
+	private static int QUANTIDADE_JOGOS = 16;
 
 	public static void main(String[] args) {
 		List<List<Double>> jogosGerados = new LinkedList<List<Double>>();
 		
-		for (int jogos = 0; jogos < 4; jogos++) {
+		for (int jogos = 0; jogos < QUANTIDADE_JOGOS; jogos++) {
 			List<Double> numeroGerados = new LinkedList<Double>();
 			
 			for (int dezenas = 0; dezenas < 6; dezenas++) {
@@ -27,6 +29,7 @@ public class GeradorNumerosMegasenaMain {
 			
 			// TODO Ordenar saida
 			
+			// TODO Retirar hifen do ultimo numero impresso
 			numeroGerados.forEach(item -> System.out.printf("%02.0f - ", item));
 			jogosGerados.add(numeroGerados);
 			
